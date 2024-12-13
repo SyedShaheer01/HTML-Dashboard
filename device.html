@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device Table</title>
+    <link rel="stylesheet" href="./device.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <header class="header">
+        <div class="logo">
+          <img src="./Images/main_logo_64ccd01dc3ca6.png" alt="Logo" />
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="home"><i class="fas fa-home"></i> Home</a>
+          <a href="#"><i class="fas fa-building"></i> Companies</a>
+          <a href="#"><i class="fas fa-users"></i> Users</a>
+          <a
+            href="#"
+            style="background-color: #002540; color: white; border-radius: 3px"
+            ><i class="fas fa-truck"></i> Devices</a
+          >
+          <a href="#"><i class="fas fa-sim-card"></i> Sims</a>
+          <a href="#"><i class="fas fa-comment"></i> SMS</a>
+          <a href="#"><i class="fas fa-envelope"></i> Emails</a>
+          <a href="#"><i class="fas fa-user-tie"></i> Resellers</a>
+          <div class="dropdown">
+            <a href="#"><i class="fas fa-ellipsis-h"></i> More</a>
+            <div class="dropdown-content">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a href="#">Option 3</a>
+            </div>
+          </div>
+        </nav>
+        <div class="profile">
+          <img src="./Images/user.jpeg" alt="" />
+          <span>Kamal</span>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="filter-section">
+        <input type="text" placeholder="IMEI" />
+        <input type="text" placeholder="Device Name" />
+        <input type="text" placeholder="Sim" />
+        <input type="text" placeholder="Offline Hours" />
+        <select>
+          <option>Select Vehicle State</option>
+        </select>
+        <button class="filter-btn">Filter</button>
+        <button class="search-btn">Search</button>
+        <button class="export-btn">Export</button>
+        <div class="hex-flex">
+          <div class="hex-white"></div>
+          <div class="hex-btn">Enable HEX</div>
+        </div>
+        <div class="color">
+          <span class="notification"></span>
+          <span class="notification-two">17</span>
+        </div>
+      </div>
+
+      <div class="table-section">
+        <div class="count">
+          <div>
+            <div class="table-info">Total Records Found: 67</div>
+            <input class="check-inp" type="checkbox" /> Totat remarks
+          </div>
+
+          <div class="count-sec">
+            <
+            <p class="one">1</p>
+            <p>2</p>
+            <p>3</p>
+            >
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Status</th>
+              <th>Name</th>
+              <th>Company</th>
+              <th>Company Mobile</th>
+              <th>IMEI</th>
+              <th>Model</th>
+              <th>Sim</th>
+              <th>Last Conn.</th>
+              <th>Device Time</th>
+              <th>Inst. Date</th>
+              <th>Exp. Date</th>
+              <th>VIN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><span class="status active">Active</span></td>
+              <td>4779 NEO NEW</td>
+              <td>Kamalnagu</td>
+              <td>-</td>
+              <td>867111062408932</td>
+              <td>Gt06N Concox</td>
+              <td>5754200272732</td>
+              <td>29-Oct, 19:06</td>
+              <td>29-Oct, 10:01</td>
+              <td>30-May-2024</td>
+              <td>29-May-2025</td>
+              <td><i class="fa fa-user"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
